@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+.docs-container{
+    padding: 0px;
+    margin: 85px 0px;
+}
+.docs-primary-header{   
+    margin-bottom: 20px;
+    padding: 20px 20px;
+    background: #2196F3;
+}
+
+.docs-primary-header h1{
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0px;
+    color: #fff;
+}
+
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 225px;
+    }
+
+    #page-wrapper {
+        padding: 10px;
+    }
+    .docs-container{
+        padding: 0px;
+        margin: 50px 0px;
+    }
+    .docs-primary-header{   
+        margin-bottom: 20px;
+        padding: 40px 20px;
+        background: #2196F3;
+    }
+
+    .docs-primary-header h1{
+        font-size: 30px;
+        font-weight: 300;
+        margin: 0px;
+        color: #fff;
+    }
+}

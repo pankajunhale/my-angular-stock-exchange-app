@@ -1,0 +1,19 @@
+
+<!-- Page Heading -->
+    <div class="row">        
+        <div class="docs-container">
+            <div class="docs-primary-header">
+                <h1>Dropdown Widget</h1>
+            </div>
+        </div> 
+        <div class="col-lg-12">            
+            <div>
+              <dropdown-widget 
+                [ActiveItemOnInit]="ActiveItemOnInit"
+                (onDropdownItemSelect)="OnDropdownItemSelect($event)"
+                [options]="options">
+              </dropdown-widget>
+            </div>
+        </div>
+    </div>
+    

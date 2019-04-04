@@ -1,0 +1,16 @@
+
+<!-- Page Heading -->
+    <div class="row">
+    <div class="docs-container">
+            <div class="docs-primary-header">
+                <h1>Dashboard</h1>
+            </div>
+        </div>
+    <div class="col-xs-6 col-md-3" *ngFor="let item of WidgetList" >
+        <a href="javascript:void(0);" (click)="DisplayWidget(item);"  class="thumbnail" style="height:100px;text-align: center;vertical-align: center;line-height:90px;">
+            {{item.Name}}
+        </a>
+    </div> 
+
+     
+    </div>

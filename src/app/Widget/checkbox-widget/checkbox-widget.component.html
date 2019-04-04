@@ -1,0 +1,6 @@
+<span *ngFor="let item of CheckBoxList" class="col-md-3">
+    <input type="checkbox"  (click)="onChange(item)" [checked]="SelectedCheckboxItem.indexOf(item) > -1"  />{{item.Title}} 
+</span>
+
+
+

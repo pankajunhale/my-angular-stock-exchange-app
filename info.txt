@@ -1,0 +1,46 @@
+Stock API - alphavantage
+k-S4G33KDKFX184ISI
+
+Sector 
+https://www.alphavantage.co/query?function=SECTOR&apikey=S4G33KDKFX184ISI
+
+Quote Endpoint 
+https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=300135.SZ&apikey=S4G33KDKFX184ISI
+
+Search Endpoint
+https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=sony&apikey=S4G33KDKFX184ISI
+
+SMA - Simple Moving Average
+https://www.alphavantage.co/query?function=SMA&symbol=MSFT&interval=1min&time_period=10&series_type=open&apikey=S4G33KDKFX184ISI
+
+EMA - Exponential Moving Average
+https://www.alphavantage.co/query?function=EMA&symbol=MSFT&interval=1min&time_period=10&series_type=open&apikey=S4G33KDKFX184ISI
+
+TIME_SERIES_MONTHLY
+https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=MSFT&apikey=S4G33KDKFX184ISI
+
+TIME_SERIES_WEEKLY
+https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol=MSFT&apikey=S4G33KDKFX184ISI
+
+TIME_SERIES_DAILY 
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=MSFT&outputsize=full&apikey=S4G33KDKFX184ISI
+
+TIME_SERIES_INTRADAY 
+https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=5min&outputsize=full&apikey=S4G33KDKFX184ISI
+
+===========
+BaseComponent
+BaseService
+Common -
+	directive
+	utility
+	constants
+	enums
+===========
+ return next.handle(req).pipe(
+            tap((event)=>{
+                if(event.type == HttpEventType.Response){
+                    console.log(`Response: , ${event}`);
+                }
+            })
+        );

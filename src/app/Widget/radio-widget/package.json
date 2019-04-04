@@ -1,0 +1,27 @@
+{
+    "name": "pankajunhale-angular-custompager",
+    "version": "v1.0.2",
+    "description": "A Custom pagination directive for AngularJS using Bootstrap",
+    "main": "pankajunhale-custom-pager.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pankajunhale/angular-custom-pager.git"
+    },
+    "keywords": [
+        "angular",
+        "bootstrap",
+        "pagination"
+    ],
+	"dependencies": {
+        "underscore": "^1.8.3"
+    },
+	"devDependencies": {
+		"@angular/language-service": "^4.0.0"
+	},
+    "author": "Pankaj M Unhale <pankajunhale@gmail.com> (https://github.com/pankajunhale)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/pankajunhale/angular-custom-pager/issues"
+    },
+    "homepage": "https://github.com/pankajunhale/angular-custom-pager"
+}

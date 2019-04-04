@@ -1,0 +1,3 @@
+<span *ngFor="let item of RadioList" class="col-md-3">
+    <input type="radio" [(ngModel)]="SelectedRadioItem" (click)="SelectItem(item)" [value]="item" />{{item.Title}} 
+</span>
