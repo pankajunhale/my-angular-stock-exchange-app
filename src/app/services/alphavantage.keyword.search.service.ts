@@ -3,7 +3,7 @@ import { BaseService } from "app/common/service/base.service";
 import { HttpClient } from '@angular/common/http';
 import { Observable } from "rxjs/Observable";
 import { map } from 'rxjs/operators';
-import { KeywordSearchResultModel } from "app/model/keyword.search.result.modle";
+import { KeywordSearchResultModel } from "app/model/keyword.search.result.model";
 
 @Injectable()
 export class AlphaVantageKeywordSearchService  extends BaseService {

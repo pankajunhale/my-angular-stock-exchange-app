@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import {BaseComponent} from '../app.base.component';
-import { AlphaVantageKeywordSearchService } from "app/services/alphavatage.keyword.search.service";
+import { AlphaVantageKeywordSearchService } from "app/services/alphavantage.keyword.search.service";
 
 @Component({
   selector: 'app-home',

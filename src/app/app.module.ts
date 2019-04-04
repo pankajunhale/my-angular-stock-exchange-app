@@ -12,7 +12,7 @@ import {SidebarComponent} from './Header/Sidebar/sidebar.component';
 import {ProfileMenuBarComponent} from './Header/ProfileMenubar/profilemenubar.component';
 import { HomeComponent } from './home/home.component';
 import { LoggerInterceptor } from "app/common/service/interceptor/logger.interceptor";
-import { AlphaVantageKeywordSearchService } from "app/services/alphavatage.keyword.search.service";
+import { AlphaVantageKeywordSearchService } from "app/services/alphavantage.keyword.search.service";
 
 @NgModule({
   declarations: [
