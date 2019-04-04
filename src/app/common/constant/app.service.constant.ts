@@ -1,0 +1,4 @@
+export const TIME_SERIES_DAILY:string = 'TIME_SERIES_DAILY';
+export const TIME_SERIES_MONTHLY:string = 'TIME_SERIES_MONTHLY';
+export const TIME_SERIES_WEEKLY:string = 'TIME_SERIES_WEEKLY';
+export const TIME_SERIES_INTRA_DAY:string = 'TIME_SERIES_INTRA_DAY';
