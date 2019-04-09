@@ -9,4 +9,11 @@ export class StockInfoBaseModel{
     constructor(){
 
     }
+
+    public FormatMyObject(obj: any): any{
+        for (let key in obj) {
+            let element = obj[key];
+            console.log(element);
+        }
+    }
 }

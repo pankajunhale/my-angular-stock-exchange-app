@@ -1,0 +1,31 @@
+<!-- Page Heading -->
+<div class="row">
+  <div class="docs-container">
+      <div class="docs-primary-header">
+          <h1>Search Result</h1>
+      </div>
+  </div>
+  <div class="col-xs-12">
+      <h3 style="margin:0px">Your are searching for: {{vm.SearchTerm}}</h3>
+  </div>
+  <div class="col-xs-6 col-md-4" style="padding-bottom:5px;margin:10px 0px 10px 0px;border:1px solid #ccc;"
+   *ngFor="let item of vm.KeywordSearchResult;let i = index">
+      <a style="border:none" [routerLink]="[DisplayDetails(item)]" class="thumbnail">
+          <h5> {{item.Name}} </h5>
+      </a>
+     
+    <div class="btn-group" data-toggle="buttons" >
+       
+        <ng-container *ngFor="let buttonItem of item.ButtonDisplayType;let j = index">            
+            <input type="radio"           
+            name="list_name_{{i}}"   
+            [checked]="j == 0" 
+            [value]="buttonItem"
+            (change)="onSelectionChange($event,buttonItem,item.ButtonDisplayType)" />
+            {{buttonItem.Name}}
+        </ng-container>
+       
+    </div>
+
+  </div>
+</div>
