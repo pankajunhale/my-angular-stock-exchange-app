@@ -49,6 +49,7 @@ export class StockListComponent implements OnInit {
         this.vm.KeywordSearchResult = result;
         this.BindButtonType();
       });
+      
   }
 
   private BindButtonType():void{
