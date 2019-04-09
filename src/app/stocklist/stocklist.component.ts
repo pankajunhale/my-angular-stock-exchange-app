@@ -48,8 +48,6 @@ export class StockListComponent implements OnInit {
       (result: Array<KeywordSearchResultModel>) => {
         this.vm.KeywordSearchResult = result;
         this.BindButtonType();
-      },
-      (error) => {
       });
   }
 
@@ -63,7 +61,6 @@ export class StockListComponent implements OnInit {
 
   public onSelectionChange(e:any,selectedModel:ButtonDisplayTypeViewModel,listOfButtonType:Array<ButtonDisplayTypeViewModel>):void{
    listOfButtonType = this.componentService.SetSelectButtonType(listOfButtonType,selectedModel);
-   console.log(listOfButtonType);
   }
 
 }
