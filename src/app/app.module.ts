@@ -13,6 +13,8 @@ import {ProfileMenuBarComponent} from './Header/ProfileMenubar/profilemenubar.co
 import { HomeComponent } from './home/home.component';
 import { LoggerInterceptor } from "app/common/service/interceptor/logger.interceptor";
 import { AlphaVantageKeywordSearchService } from "app/services/alphavantage.keyword.search.service";
+import { StockListModule } from "app/stocklist/stocklist.module";
+import { StockDetailsModule } from 'app/stockdetails/stockdetails.module';
 
 @NgModule({
   declarations: [
@@ -21,14 +23,15 @@ import { AlphaVantageKeywordSearchService } from "app/services/alphavantage.keyw
     FooterComponent,
     SidebarComponent,
     ProfileMenuBarComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule, //must use if uses ngModel,
+    FormsModule, //must use if we are using ngModel,
     routes,
-    DatepickerModule.forRoot()
+    StockListModule,
+    StockDetailsModule
   ],
   exports:[],
   providers: [
