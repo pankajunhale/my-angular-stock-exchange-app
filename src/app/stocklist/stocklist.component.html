@@ -14,8 +14,7 @@
           <h5> {{item.Name}} </h5>
       </a>
      
-    <div class="btn-group" data-toggle="buttons" >
-       
+    <div class="btn-group" data-toggle="buttons" >       
         <ng-container *ngFor="let buttonItem of item.ButtonDisplayType;let j = index">            
             <input type="radio"           
             name="list_name_{{i}}"   
@@ -23,8 +22,7 @@
             [value]="buttonItem"
             (change)="onSelectionChange($event,buttonItem,item.ButtonDisplayType)" />
             {{buttonItem.Name}}
-        </ng-container>
-       
+        </ng-container>       
     </div>
 
   </div>
